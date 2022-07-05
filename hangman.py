@@ -1,0 +1,5 @@
+print("Choose your difficulty:")
+print("(1) Low (Cowardly, but a safe bet.)")
+print("(2) Medium (Living on the edge?)")
+print("(3) High (Suicidal, are we?)")
+choice = input("-> ")
