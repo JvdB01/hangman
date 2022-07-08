@@ -36,9 +36,13 @@ mistakes = 0
 word = random.choice(wordlist)
 length = len(word)
 known = ""
-while length > 0:
-    known += "_"
-    length -= 1
+# while length > 0:
+for n in word:
+    if n == " ":
+        known += n
+    else:
+        known += "_"
+        length -= 1
 
 while mistakes < 9:
     draw_screen(known, mistakes)
@@ -62,5 +66,5 @@ while mistakes < 9:
         else:
             mistakes += 1
 if known != word:
-    draw_screen(known, mistakes)
+    draw_screen(word, mistakes)
     print("You lose!")
